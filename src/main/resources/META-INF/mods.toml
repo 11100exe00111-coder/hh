@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="clientboost"
+version="1.0.0"
+displayName="Client Boost"
+displayTest="IGNORE_SERVER_VERSION"
+description='''
+Client-side-only performance helpers: entity distance culling, nametag culling,
+background FPS limiter and optional dynamic render distance.
+Safe to join any server, with or without the mod installed there.
+'''
+
+[[dependencies.clientboost]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="CLIENT"
+
+[[dependencies.clientboost]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="CLIENT"
